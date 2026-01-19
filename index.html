@@ -9,11 +9,25 @@
     html {
       font-family: "Trebuchet MS"
     }
+    .gallery li {
+      display:inline-block;
+      margin:20px
+    }
+    .gallery div { 
+      height:300px; 
+      width:300px; 
+      background-size:contain; 
+      background-repeat:no-repeat;
+      background-position:center;
+      background-color:#9098A9
+    }
   </style>
   <!DOCTYPE html>
 </head>
 
 <body>
+  <div style="height: 100px; background:url(Birdday.png); background-size:cover">  
+  </div>
   <h1>
     <img style="float:left" src="Birdy Cards Logo.jpg" width="200" alt="Birdy Cards by Sophia Christel"/>
   </h1><br>
@@ -24,6 +38,8 @@
     <li style="display:inline-block">Contact</li>
   </ul>
   <hr style="clear:both"/>
+
+
   <h2>About</h2>
   <p>I'm an artist from Palo Alto, California, who makes art inspired by landscapes and species local to places special
     to me: my home in the San Francisco Bay Area, Australia, and the corners of my imagination.</p>
@@ -44,11 +60,31 @@
   <p></p>
   <h2>Gallery<a id="gallery"></a></h2>
   <p></p>
-  <p>
-    <a href="https://etsy.com"><img src="https://picsum.photos/400/300" /><br>
-      Order Card1
-    </a>
-  </p>
+  <div class="gallery">
+    <ul>
+      <li>
+          <a href="https://etsy.com">
+              <div style="background-image:url('Phoebe Glam.jpg')">
+              </div><br>
+      Order Teehee Teehoo
+          </a>
+      </li>
+      <li >
+          <a href="https://etsy.com">
+              <div style="background-image:url('Folger Glam.jpg')">
+              </div><br>
+      Order Folger Ranch
+          </a>
+      </li>
+      <li >
+          <a href="https://etsy.com">
+              <div style="background-image:url('Fairy Wrens Glam.jpg')">
+              </div><br>
+      Order Fairy Wrens
+          </a>
+      </li>
+    </ul>
+  </div>
 
 
 </body>
