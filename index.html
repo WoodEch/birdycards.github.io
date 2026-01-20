@@ -11,7 +11,9 @@
     }
     .gallery li {
       display:inline-block;
-      margin:20px
+      margin-left:0px;
+      margin-right:20px;
+      margin-top:35px
     }
     .gallery div { 
       height:300px; 
@@ -30,7 +32,7 @@
   <!DOCTYPE html>
 </head>
 
-<body>
+<body style="margin-inline:auto; max-width:700px; padding:15px">
 <!--Top Banner-->
   <div style="height: 100px; background:url(Birdday.png); background-size:cover">  
   </div>
@@ -46,7 +48,10 @@
   <hr style="clear:both"/>
 
   <!--About-->
-  <div style="background-color:rgb(201, 227, 197); background-size:contain; padding:15px">
+  <div 
+    style="background-color:rgb(201, 227, 197);
+    background-size:contain;
+    padding:15px">
     <h2>About</h2>
       <p>I'm an artist from Palo Alto, California, who is inspired by the landscapes and species of places special
         to me: my home in the San Francisco Bay Area, Australia, and the corners of my imagination.</p>
@@ -59,7 +64,7 @@
 
       <!--bird ascii-->
       <p style="font-family:'Courier'">
-        &nbsp;&nbsp;&nbsp;\\&nbsp;&nbsp;/ <sup>&#865;</sup>"&gt;&nbsp;&hearts;<br />
+        &nbsp;&nbsp;&nbsp;\\&nbsp;&nbsp;/&nbsp;<sup>&#865;</sup>"&gt;&nbsp;&hearts;<br />
         &nbsp;&nbsp;&nbsp;&nbsp;\\/&rdquo;<em>&#10217;)</em><br />
         &nbsp;&nbsp;&nbsp;&nbsp; <em><sup>//</sup></em>&nbsp;<span style="text-decoration: underline;">&prod;</span>
       </p>
@@ -73,7 +78,7 @@
   <h2>Gallery<a id="gallery"></a></h2>
   <p></p>
   <div class="gallery">
-    <ul>
+    <ul style="padding:0px">
       <li>
           <a href="https://etsy.com">
               <div style="background-image:url('Phoebe Glam.jpg')">
